@@ -7,7 +7,12 @@ import Card from "../Component/Card";
 const Home = () => {
   const { allData, loading, error } = useAllData();
 
-  if (loading) return <p>Loading...</p>;
+  if (loading)
+    return (
+      <div className=" h-48 flex justify-center items-center text-center text-2xl font-bold">
+        <p>Loading...</p>
+      </div>
+    );
 
   // console.log(alu);
 

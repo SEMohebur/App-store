@@ -6,6 +6,7 @@ import AllApp from "../Pages/AllApp";
 import InstalledAppPage from "../Pages/InstalledAppPage";
 import NotFoundPage from "../Pages/NotFoundPage";
 import CardDetailPage from "../Pages/CardDetailPage";
+import NotFoundApp from "../Pages/NotFoundApp";
 
 export const router = createBrowserRouter([
   {
@@ -23,5 +24,9 @@ export const router = createBrowserRouter([
   {
     path: "*",
     Component: NotFoundPage,
+  },
+  {
+    path: "/notFoundApp",
+    Component: NotFoundApp,
   },
 ]);

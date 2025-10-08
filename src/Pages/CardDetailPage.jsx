@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import useAllData from "../Hooks/UseAllData";
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import downloadImg from "../assets/icon-downloads.png";
 import ratingImg from "../assets/icon-ratings.png";
 import reviewImg from "../assets/icon-review.png";
+
+import { ToastContainer, toast } from "react-toastify";
 
 import {
   ComposedChart,
@@ -20,14 +22,33 @@ import {
 } from "recharts";
 
 const CardDetailPage = () => {
+  const navigate = useNavigate();
   const { allData, loading, error } = useAllData();
+  const [btnStatus, setBtnStatus] = useState(false);
 
   const { id } = useParams();
-  //loading
-  if (loading) return <p className=" text-center">Loading...</p>;
-  const singleData = allData.find((item) => item.id == id);
-  console.log(singleData);
 
+  //btn status check
+  useEffect(() => {
+    const downloadedApp = JSON.parse(localStorage.getItem("appList"));
+    const status = downloadedApp?.some((app) => app.id == id);
+    setBtnStatus(status);
+  }, [btnStatus]);
+
+  // pages loading======================================================
+  if (loading)
+    return (
+      <div className=" h-48 flex justify-center items-center text-center text-2xl font-bold">
+        <p>Loading...</p>
+      </div>
+    );
+
+  //find singlae data
+  const singleData = allData.find((item) => item.id == id);
+
+  if (!singleData) return navigate("/notFoundApp");
+
+  //numberFormater
   function formatNumber(num) {
     const units = ["", "K", "M", "B", "T", "Q", "Qn"];
     let i = Math.floor(Math.log10(num) / 3); //
@@ -35,9 +56,30 @@ const CardDetailPage = () => {
     return (num / Math.pow(1000, i)).toFixed(1).replace(/\.0$/, "") + units[i];
   }
 
+  //ToastMsg
+  const downloadAlert = () => toast("✅ Installed successfully!");
+  const allradyAxist = () => toast("✅ Already installed!");
+
+  //add to localstorage
+  const addToLocalStorage = () => {
+    const downloadedApp = JSON.parse(localStorage.getItem("appList"));
+    let updateList = [];
+    if (downloadedApp) {
+      const isDublicate = downloadedApp.some((app) => app.id == id);
+      if (isDublicate) return allradyAxist();
+      updateList = [...downloadedApp, singleData];
+    } else {
+      updateList.push(singleData);
+    }
+    localStorage.setItem("appList", JSON.stringify(updateList));
+    // console.log(downloadedApp);
+    downloadAlert();
+    setBtnStatus(!btnStatus);
+  };
+
   return (
     <div className=" bg-gray-100 p-10 ">
-      <div className=" flex gap-10  ">
+      <div className=" flex flex-col md:flex-row gap-10  ">
         <div className=" bg-white rounded-2xl p-2">
           <img className=" h-40" src={singleData.image} alt="" />
         </div>
@@ -73,8 +115,14 @@ const CardDetailPage = () => {
               </p>
             </div>
           </div>
-          <button className=" mt-2 btn bg-green-400 text-white">
-            Install Now
+          <button
+            disabled={btnStatus}
+            onClick={addToLocalStorage}
+            className=" mt-2 btn bg-green-400 text-white"
+          >
+            {btnStatus
+              ? "Already Download"
+              : `Install Now ${singleData.size}MB`}
           </button>
         </div>
       </div>
@@ -84,7 +132,7 @@ const CardDetailPage = () => {
       <h2 className=" text-center text-indigo-600 font-semibold underline my-3">
         Ratings Chart
       </h2>
-      <div className="w-full h-96 shadow-2xl rounded-xl">
+      <div className="w-full h-96 shadow-md rounded-xl">
         <ResponsiveContainer width="100%" height="100%">
           <ComposedChart
             data={singleData.ratings}
@@ -103,9 +151,12 @@ const CardDetailPage = () => {
 
       {/*description*/}
       <div className=" my-3">
-        <p className=" font-semibold mb-2">Description</p>
+        <p className=" font-semibold  text-2xl  text-gray-700 mb-2">
+          Description
+        </p>
         <p className=" font-thin">{singleData.description}</p>
       </div>
+      <ToastContainer />
     </div>
   );
 };
