@@ -1,0 +1,470 @@
+[
+  {
+    "image": "https://www.manufacturednc.com/assets/img/companies/Alphatech-Inc/logo.png",
+    "title": "App Alpha",
+    "companyName": "AlphaTech Inc.",
+    "id": 1,
+    "description": "A productivity app for managing tasks and schedules.",
+    "size": 24.5,
+    "reviews": 1200,
+    "ratingAvg": 4.6,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 45 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 625 }
+    ]
+  },
+  {
+    "image": "https://media.licdn.com/dms/image/v2/C560BAQHF4u6bI4GopQ/company-logo_200_200/company-logo_200_200/0/1630643422866?e=2147483647&v=beta&t=1shn0kgv4Qu6woBv4PB8BwydYBykLUf776-8CiRDI4k",
+    "title": "Budget Buddy",
+    "companyName": "FinanceSoft Ltd.",
+    "id": 2,
+    "description": "Personal budgeting and expense tracking tool.",
+    "size": 18.7,
+    "reviews": 820,
+    "ratingAvg": 4.3,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 300 }
+    ]
+  },
+  {
+    "image": "https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/ti77elotipp9iumbauau",
+    "title": "ChatNow",
+    "companyName": "CommuniTech",
+    "id": 3,
+    "description": "Instant messaging app with voice and video calls.",
+    "size": 32.0,
+    "reviews": 2500,
+    "ratingAvg": 4.8,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1685 }
+    ]
+  },
+  {
+    "image": "https://yt3.googleusercontent.com/ytc/AIdro_lm2gkaRdbhXn-dxyAx8Wbo_Q2T2t680Fz5o7aSV6Zplw=s900-c-k-c0x00ffffff-no-rj",
+    "title": "DesignPro",
+    "companyName": "Creative Labs",
+    "id": 4,
+    "description": "Graphic design tool for professionals and hobbyists.",
+    "size": 45.6,
+    "reviews": 900,
+    "ratingAvg": 4.4,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 35 },
+      { "name": "3 star", "count": 110 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 390 }
+    ]
+  },
+  {
+    "image": "https://pd.daffodilvarsity.edu.bd/web/image/website/1/social_default_image?unique=52182d0",
+    "title": "EduLearn",
+    "companyName": "SmartEdu",
+    "id": 5,
+    "description": "E‑learning platform with courses and quizzes.",
+    "size": 27.3,
+    "reviews": 1500,
+    "ratingAvg": 4.7,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 90 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 875 }
+    ]
+  },
+  {
+    "image": "https://seeklogo.com/images/H/health-wave-logo-E8CC6CAF56-seeklogo.com.png",
+    "title": "FitTrack",
+    "companyName": "HealthWave",
+    "id": 6,
+    "description": "Fitness tracking and health analytics app.",
+    "size": 22.8,
+    "reviews": 1350,
+    "ratingAvg": 4.5,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 630 }
+    ]
+  },
+  {
+    "image": "https://playverse.gr/wp-content/uploads/2023/03/logo-playverse-yellow-rgb-1-e1678966130549.png",
+    "title": "GameHub",
+    "companyName": "Playverse",
+    "id": 7,
+    "description": "A mobile gaming hub with multiple mini‑games.",
+    "size": 55.4,
+    "reviews": 2100,
+    "ratingAvg": 4.6,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1010 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsHikVzMSrWjbB21clEvj5vyqajXATE92UCA&s",
+    "title": "HomeSecure",
+    "companyName": "SafeTech Solutions",
+    "id": 8,
+    "description": "Home security system monitoring & alerts.",
+    "size": 15.2,
+    "reviews": 700,
+    "ratingAvg": 4.2,
+    "downloads": 250000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 230 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxQPLpMvXeAlDjeFtF-OAiZ9IGRSdytMlCCQ0eNGPMwjsCeuAuGHYGf1L_sosQL1sVJrQ&usqp=CAU",
+    "title": "Invoicer",
+    "companyName": "BizTools",
+    "id": 9,
+    "description": "Invoice and billing management app for small businesses.",
+    "size": 12.4,
+    "reviews": 650,
+    "ratingAvg": 4.0,
+    "downloads": 220000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 120 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyHhg5j-hXmHB9CuEV7HrfesI0O8sXMJEP6w&s",
+    "title": "JourneyMap",
+    "companyName": "TravelWise",
+    "id": 10,
+    "description": "Travel planner and map navigation app.",
+    "size": 30.0,
+    "reviews": 1400,
+    "ratingAvg": 4.5,
+    "downloads": 550000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 35 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 520 },
+      { "name": "5 star", "count": 710 }
+    ]
+  },
+  {
+    "image": "https://thumbs.dreamstime.com/b/bright-education-logo-26459220.jpg",
+    "title": "KidsLearn",
+    "companyName": "BrightFuture EdTech",
+    "id": 11,
+    "description": "Educational games for children.",
+    "size": 20.6,
+    "reviews": 1100,
+    "ratingAvg": 4.4,
+    "downloads": 450000,
+    "ratings": [
+      { "name": "1 star", "count": 12 },
+      { "name": "2 star", "count": 38 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 450 },
+      { "name": "5 star", "count": 450 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/T8VpmRoEZggWddkKJ5CClQBhn2NnnIYmz-vjis8_n1t2n5fQ5lXQej1Jj0N3ZnxtsOw",
+    "title": "LifeJournal",
+    "companyName": "Mindful Apps",
+    "id": 12,
+    "description": "Daily journaling and mood tracking.",
+    "size": 16.8,
+    "reviews": 900,
+    "ratingAvg": 4.3,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 90 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 432 }
+    ]
+  },
+  {
+    "image": "https://stockpulse.ai/images/stockpulse_logo_square_graph_tag.webp",
+    "title": "MarketWatch",
+    "companyName": "StockPulse",
+    "id": 13,
+    "description": "Real-time stock market tracker and alerts.",
+    "size": 28.7,
+    "reviews": 1800,
+    "ratingAvg": 4.7,
+    "downloads": 700000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1010 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFUfHdHCcfNp5uKP1NqHzLaCkRmEN4e2GDfQ&s",
+    "title": "NewsFlash",
+    "companyName": "MediaNext",
+    "id": 14,
+    "description": "News aggregator with personalized topics.",
+    "size": 19.5,
+    "reviews": 1300,
+    "ratingAvg": 4.2,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 365 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/UDnqTuwLRc4Dgu3c27Wt3LoVtW7UsYzpHTiRqDqLPUxz_FUnfc14TvkRoInsqePnrw",
+    "title": "OrganizeIt",
+    "companyName": "FlowSoft",
+    "id": 15,
+    "description": "All‑in‑one organizer: notes, tasks, calendar.",
+    "size": 21.2,
+    "reviews": 1000,
+    "ratingAvg": 4.5,
+    "downloads": 420000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 445 }
+    ]
+  },
+  {
+    "image": "https://www.pixelworks.com/media/wp-content/uploads/2022/02/cover.png",
+    "title": "PhotoMaster",
+    "companyName": "PixelWorks",
+    "id": 16,
+    "description": "Photo editing and filter app.",
+    "size": 50.1,
+    "reviews": 1600,
+    "ratingAvg": 4.6,
+    "downloads": 650000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 800 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/aDmbKriyzyrztoZbD2lrfl2GjOjFokgeWvy0-Raxnsa9f4CGCRc34Y21-VrWanbkPpE",
+    "title": "QuickScan",
+    "companyName": "DocuTech",
+    "id": 17,
+    "description": "Document scanner and PDF converter.",
+    "size": 14.9,
+    "reviews": 800,
+    "ratingAvg": 4.3,
+    "downloads": 280000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 45 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 320 }
+    ]
+  },
+  {
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/21/60/76/21607669-f9db-a5cc-0f3d-de8156e39d24/AppIcon-0-0-1x_U007epad-0-1-85-220.png/1200x600wa.png",
+    "title": "ReadMate",
+    "companyName": "LitApps",
+    "id": 18,
+    "description": "eBook reader and library manager.",
+    "size": 17.4,
+    "reviews": 950,
+    "ratingAvg": 4.4,
+    "downloads": 350000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 390 }
+    ]
+  },
+  {
+    "image": "https://cdn.freebiesupply.com/logos/large/2x/retailtech-logo-png-transparent.png",
+    "title": "ShopEasy",
+    "companyName": "RetailTech",
+    "id": 19,
+    "description": "Online marketplace mobile app.",
+    "size": 35.8,
+    "reviews": 2200,
+    "ratingAvg": 4.5,
+    "downloads": 1100000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 880 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmA-vW_kXLI75DbjNmo5Qmfh8Es8D2_0yCtg&s",
+    "title": "TravelGuide",
+    "companyName": "GlobeTrek",
+    "id": 20,
+    "description": "Local guides, tours, and travel itineraries.",
+    "size": 25.3,
+    "reviews": 1200,
+    "ratingAvg": 4.6,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 480 }
+    ]
+  },
+  {
+    "image": "https://marketplace.canva.com/EAE08FE0SUM/2/0/1600w/canva-black-and-orange-minimalist-education-logo-GXeg8FJ3aFI.jpg",
+    "title": "UniChat",
+    "companyName": "EduComms",
+    "id": 21,
+    "description": "Campus chat & social network for students.",
+    "size": 23.0,
+    "reviews": 1000,
+    "ratingAvg": 4.4,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 130 },
+      { "name": "4 star", "count": 450 },
+      { "name": "5 star", "count": 380 }
+    ]
+  },
+  {
+    "image": "https://logopond.com/logos/d202483716623a28faf129260346569a.png",
+    "title": "VideoCast",
+    "companyName": "MediaFlow",
+    "id": 22,
+    "description": "Video streaming and casting service.",
+    "size": 40.2,
+    "reviews": 1700,
+    "ratingAvg": 4.5,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 170 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 845 }
+    ]
+  },
+  {
+    "image": "https://assets.bizclikmedia.net/1200/24f375b42aa1835575764f19871285bb:24c50a5c2feb81c2afe72105ecc1afc6/cms-climate-tech-coming-soon-1.jpg",
+    "title": "WeatherWise",
+    "companyName": "ClimateTech",
+    "id": 23,
+    "description": "Real‑time weather forecasts and alerts.",
+    "size": 14.7,
+    "reviews": 1100,
+    "ratingAvg": 4.3,
+    "downloads": 360000,
+    "ratings": [
+      { "name": "1 star", "count": 12 },
+      { "name": "2 star", "count": 35 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 433 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTES03swKsqJ67ji4YPM_6fvLCXsrGkugGuag&s",
+    "title": "XPressScan",
+    "companyName": "QuickTech",
+    "id": 24,
+    "description": "Fast scanning & OCR for documents.",
+    "size": 13.8,
+    "reviews": 900,
+    "ratingAvg": 4.2,
+    "downloads": 320000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 320 }
+    ]
+  },
+  {
+    "image": "https://png.pngtree.com/png-vector/20190328/ourmid/pngtree-vector-health-icon-png-image_872217.jpg",
+    "title": "YogaFlow",
+    "companyName": "WellBeing Apps",
+    "id": 25,
+    "description": "Yoga routines, meditation and wellness tracking.",
+    "size": 24.9,
+    "reviews": 950,
+    "ratingAvg": 4.4,
+    "downloads": 340000,
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 22 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 420 }
+    ]
+  },
+  {
+    "image": "https://images.squarespace-cdn.com/content/v1/52eaead0e4b0fd67cc51a9d3/1691031236298-63F0W89G47IB8TK4WBXS/Relaxtech.jpeg",
+    "title": "ZenSleep",
+    "companyName": "RelaxTech",
+    "id": 26,
+    "description": "Sleep monitoring and relaxation sounds.",
+    "size": 11.5,
+    "reviews": 700,
+    "ratingAvg": 4.3,
+    "downloads": 280000,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 80 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 295 }
+    ]
+  }
+]
