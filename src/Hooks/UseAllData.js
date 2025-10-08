@@ -9,7 +9,7 @@ const useAllData = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios("./mainData.json")
+    axios("../mainData.json")
       .then((data) => setAllData(data.data))
       .catch((er) => setError(er))
       .finally(() => setLoading(false));

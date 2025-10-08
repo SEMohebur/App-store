@@ -9,7 +9,7 @@ const Home = () => {
 
   if (loading) return <p>Loading...</p>;
 
-  // console.log(allData);
+  // console.log(alu);
 
   return (
     <div className="  text-center pt-10 bg-gray-100">

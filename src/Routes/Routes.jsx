@@ -4,6 +4,8 @@ import ErrorPage from "../Pages/ErrorPage";
 import Home from "../Pages/Home";
 import AllApp from "../Pages/AllApp";
 import InstalledAppPage from "../Pages/InstalledAppPage";
+import NotFoundPage from "../Pages/NotFoundPage";
+import CardDetailPage from "../Pages/CardDetailPage";
 
 export const router = createBrowserRouter([
   {
@@ -15,6 +17,11 @@ export const router = createBrowserRouter([
       { index: true, Component: Home },
       { path: "/app", Component: AllApp },
       { path: "/installedApp", Component: InstalledAppPage },
+      { path: "/cardDetailPage/:id", Component: CardDetailPage },
     ],
+  },
+  {
+    path: "*",
+    Component: NotFoundPage,
   },
 ]);

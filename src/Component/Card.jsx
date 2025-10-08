@@ -1,6 +1,7 @@
 import React from "react";
 import downloadIcon from "../assets/icon-downloads.png";
 import ratingIcon from "../assets/icon-ratings.png";
+import { Link } from "react-router";
 
 const Card = ({ item }) => {
   function formatNumber(num) {
@@ -11,7 +12,10 @@ const Card = ({ item }) => {
   }
 
   return (
-    <div className=" shadow p-5 bg-white rounded-xl">
+    <Link
+      to={`/cardDetailPage/${item.id}`}
+      className=" shadow p-5 bg-white rounded-xl"
+    >
       <div className="p-5">
         <div className=" flex justify-center border border-gray-200 rounded-2xl p-2">
           <img
@@ -34,7 +38,7 @@ const Card = ({ item }) => {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

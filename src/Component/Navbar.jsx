@@ -43,7 +43,7 @@ const Navbar = () => {
         <button className="btn btn-ghost ">
           <NavLink to="/" className=" flex gap-2 items-center ">
             <img className=" h-[30px]" src={logo} alt="" />
-            <p className=" font-bold">HERO.IO</p>
+            <p className=" font-bold">App Store</p>
           </NavLink>
         </button>
       </div>
