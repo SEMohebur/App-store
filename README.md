@@ -1,4 +1,4 @@
-live Link : https://vocal-crisp-cd5900.netlify.app/
+
 
 
 📱 App Store Project – Summary
