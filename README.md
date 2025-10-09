@@ -1,16 +1,79 @@
-# React + Vite
+📱 App Store Project – Summary
+🐣 Basic Requirements
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+অ্যাপটি সম্পূর্ণ রেস্পনসিভ।
 
-Currently, two official plugins are available:
+৫+ GitHub কমিট করা হয়েছে।
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+অ্যাপের জন্য অর্থবহ নাম নির্ধারণ করা হয়েছে।
 
-## React Compiler
+Production build এ কোনো error নেই।
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔧 Main Features
+🧱 Layout
 
-## Expanding the ESLint configuration
+Header: লোগো, ন্যাভ লিংক (Home, Apps, Installation), ও GitHub বাটন।
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Footer: কাস্টম ডিজাইন।
+
+Data: 26টি অ্যাপ অবজেক্টসহ JSON ফাইল।
+
+🏠 Home Page
+
+ব্যানারে শিরোনাম, টেক্সট ও দুটি বাটন (App Store / Play Store)।
+
+তিনটি স্টেট কার্ড ও ৮টি টপ অ্যাপ কার্ড।
+
+“Show All” বাটনে All Apps পেজে যায়।
+
+📱 All Apps Page
+
+টাইটেল, মোট অ্যাপ সংখ্যা, ও লাইভ সার্চ ফিচার।
+
+সার্চ case-insensitive, না পেলে “No App Found” মেসেজ।
+
+📊 App Details Page
+
+অ্যাপের তথ্য, Install বাটন (Installed হলে disabled)।
+
+Toast মেসেজ ও Recharts চার্ট।
+
+বিস্তারিত বর্ণনা সেকশন।
+
+⚠️ Error Page
+
+অবৈধ রুটের জন্য কাস্টম এরর পেজ।
+
+পেজ পরিবর্তন ও সার্চের সময় লোডিং অ্যানিমেশন।
+
+🧩 Challenge Features
+
+LocalStorage: ইনস্টল করা অ্যাপ সেভ হয়, Installed থাকলে বাটন disabled।
+
+My Installation Page: ইনস্টল করা অ্যাপ দেখা ও Uninstall করা যায় (Toast সহ)।
+
+Sort By Downloads: High–Low ও Low–High অপশন।
+
+🛠️ Technologies Used
+
+React.js – Frontend UI development
+
+React Router – Navigation ও Routing
+
+Axios – JSON ডেটা ফেচিং
+
+Tailwind CSS – Responsive styling
+
+Recharts – Review চার্ট তৈরির জন্য
+
+React Hot Toast – Toast নোটিফিকেশন
+
+LocalStorage API – Installation ডেটা সংরক্ষণের জন্য
+
+JSON (mainData.json) – Static data storage
+
+react icons - icons
+
+DaisyUI - style Ready Component
+
+Others...
