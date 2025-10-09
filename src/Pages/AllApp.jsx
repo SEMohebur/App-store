@@ -1,11 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import useAllData from "../Hooks/UseAllData";
 import Card from "../Component/Card";
 import { Link } from "react-router";
 
 const AllApp = () => {
   const { allData, loading, error } = useAllData();
-  const [search, setsearch] = useState("");
+  const [filterData, setFilterData] = useState([]);
+  const [filterLoading, setFilterLoading] = useState(false);
+
+  //allData jodi khali kina check kore tar por data set kora hocche
+  useEffect(() => {
+    if (allData && allData.length > 0) {
+      setFilterData(allData);
+    }
+  }, [allData]);
+
+  //inpute value get and filtering
+  const handleFilter = (term) => {
+    setFilterLoading(true);
+    setTimeout(() => {
+      const result = allData.filter((item) =>
+        item.title.toLowerCase().includes(term.toLowerCase())
+      );
+      setFilterData(result);
+      setFilterLoading(false);
+    }, 1000);
+  };
 
   if (loading)
     return (
@@ -14,13 +34,8 @@ const AllApp = () => {
       </div>
     );
 
-  const term = search.trim().toLowerCase();
-  const filterData = term
-    ? allData.filter((item) => item.title.toLowerCase().includes(term))
-    : allData;
-
   return (
-    <div className=" p-10 bg-gray-100">
+    <div className=" p-10  bg-gray-100">
       <div className=" text-center">
         <h1 className=" text-3xl font-bold">Our All Applications</h1>
         <p className=" font-thin mt-2">
@@ -53,7 +68,7 @@ const AllApp = () => {
               </g>
             </svg>
             <input
-              onChange={(e) => setsearch(e.target.value)}
+              onChange={(e) => handleFilter(e.target.value)}
               type="search"
               required
               placeholder="Search App"
@@ -62,7 +77,11 @@ const AllApp = () => {
         </div>
       </div>
 
-      {filterData.length ? (
+      {filterLoading ? (
+        <div className=" h-96 flex justify-center items-center text-center text-2xl font-bold">
+          <p>Loading...</p>
+        </div>
+      ) : filterData.length ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           {filterData.map((item, index) => (
             <Card key={index} item={item} />

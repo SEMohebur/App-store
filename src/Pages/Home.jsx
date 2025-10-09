@@ -3,6 +3,10 @@ import { Link } from "react-router";
 import bannerImg from "../assets/hero.png";
 import useAllData from "../Hooks/UseAllData";
 import Card from "../Component/Card";
+import { CiSaveDown2 } from "react-icons/ci";
+import { CiStar } from "react-icons/ci";
+import { FaGooglePlay } from "react-icons/fa";
+import { FaArrowTrendUp } from "react-icons/fa6";
 
 const Home = () => {
   const { allData, loading, error } = useAllData();
@@ -62,21 +66,27 @@ const Home = () => {
                 Trusted by Millions, Built for You
               </h2>
               <div className=" flex flex-col md:flex-row justify-center gap-10">
-                <div>
+                <div className=" flex flex-col items-center">
                   <p className=" text-sm font-thin">Total Downloads</p>
-                  <strong className=" text-3xl">29.6M</strong>
+                  <strong className="  text-3xl flex gap-1">
+                    29.6M <CiSaveDown2 />
+                  </strong>
                   <p className=" text-sm font-thin">21% more than last month</p>
                 </div>
 
-                <div>
-                  <p className=" text-sm font-thin">Total Reviews</p>
-                  <strong className=" text-3xl">906K</strong>
+                <div className=" flex flex-col items-center">
+                  <p className=" text-sm font-thin  ">Total Reviews</p>
+                  <strong className=" text-3xl flex gap-1">
+                    906K <CiStar />
+                  </strong>
                   <p className=" text-sm font-thin">46% more than last month</p>
                 </div>
 
-                <div>
+                <div className=" flex flex-col items-center">
                   <p className=" text-sm font-thin">Active Apps</p>
-                  <strong className=" text-3xl">132+</strong>
+                  <strong className=" text-3xl flex">
+                    132+ <FaGooglePlay />
+                  </strong>
                   <p className=" text-sm font-thin">31 more will Launch</p>
                 </div>
               </div>
@@ -87,10 +97,12 @@ const Home = () => {
 
       {/*Trending Apps*/}
       <div className=" py-10 px-10">
-        <div>
-          <h2 className=" text-2xl font-bold">Trending Apps</h2>
-          <p className=" font-thin">
-            Explore All Trending Apps on the Market developed by us
+        <div className="text-center">
+          <h2 className="text-2xl font-bold flex items-center justify-center gap-2  py-2 rounded-lg">
+            Trending Apps <FaArrowTrendUp className=" text-indigo-500" />
+          </h2>
+          <p className="font-thin mt-1">
+            Explore all trending apps on the market developed by us
           </p>
         </div>
 

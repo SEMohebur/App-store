@@ -1,33 +1,55 @@
-import React from "react";
-import logo from "../assets/logo.png";
 import { NavLink } from "react-router";
 import { TiSocialTwitter } from "react-icons/ti";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn, FaFacebookF } from "react-icons/fa";
+import logo from "../assets/logo.png";
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className=" px-7 bg-gray-900 text-white py-10">
-      <div className=" flex items-center justify-between px-">
-        <NavLink className=" flex items-center ">
-          <img className=" h-[50px]" src={logo} alt="" />
-          <p className=" font-bold">App Store</p>
+    <footer className="px-7 bg-gray-900 text-white py-10">
+      <div className="grid md:grid-cols-3 gap-8 items-center border-b border-gray-700 pb-6">
+        <NavLink className="flex items-center justify-center md:justify-start gap-3 ">
+          <img className="h-[50px]" src={logo} alt="App Store Logo" />
+          <p className="font-bold text-lg">App Store</p>
         </NavLink>
-        <div>
-          <h2>Social Links</h2>
-          <div className=" flex gap-3">
-            <TiSocialTwitter />
-            <FaLinkedinIn />
-            <FaFacebookF />
+
+        <div className="text-center">
+          <h2 className="font-semibold text-lg mb-3">Quick Links</h2>
+          <ul className="space-y-2 text-gray-400">
+            <li>
+              <NavLink to="/" className="hover:text-white">
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/app" className="hover:text-white">
+                All App
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/installedApp" className="hover:text-white">
+                Installation
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+        <div className="text-center md:text-right">
+          <h2 className="font-semibold text-lg mb-3">Follow Us</h2>
+          <div className="flex md:justify-end justify-center gap-4 text-gray-400">
+            <a href="#" className="hover:text-blue-400 text-xl">
+              <TiSocialTwitter />
+            </a>
+            <a href="#" className="hover:text-blue-600 text-xl">
+              <FaLinkedinIn />
+            </a>
+            <a href="#" className="hover:text-blue-500 text-xl">
+              <FaFacebookF />
+            </a>
           </div>
         </div>
       </div>
-      <hr className=" text-gray-700 my-2" />
-      <p className=" text-center font-thin">
-        Copyright © 2025 - All right reserved
-      </p>
+      <div className="pt-6 text-center text-gray-400 text-sm">
+        <p>Copyright © 2025 - All rights reserved</p>
+      </div>
     </footer>
   );
-};
-
-export default Footer;
+}

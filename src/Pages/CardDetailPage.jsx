@@ -80,7 +80,7 @@ const CardDetailPage = () => {
   return (
     <div className=" bg-gray-100 p-10 ">
       <div className=" flex flex-col md:flex-row gap-10  ">
-        <div className=" bg-white rounded-2xl p-2">
+        <div className=" bg-white flex items-center justify-center rounded-2xl p-2 ">
           <img className=" h-40" src={singleData.image} alt="" />
         </div>
         <div>
@@ -91,7 +91,7 @@ const CardDetailPage = () => {
               {singleData.companyName}
             </span>
           </p>
-          <hr className=" my-2" />
+          <hr className=" my-2 text-gray-400" />
           <div className=" flex gap-4">
             <div>
               <img className=" h-7" src={downloadImg} alt="" />
@@ -126,13 +126,13 @@ const CardDetailPage = () => {
           </button>
         </div>
       </div>
-      <hr className=" my-3" />
+      <hr className=" my-3 text-gray-400" />
 
       {/* Ratings Chart */}
       <h2 className=" text-center text-indigo-600 font-semibold underline my-3">
         Ratings Chart
       </h2>
-      <div className="w-full h-96 shadow-md rounded-xl">
+      <div className="w-full h-96 border border-gray-400 shadow-xl rounded-xl">
         <ResponsiveContainer width="100%" height="100%">
           <ComposedChart
             data={singleData.ratings}

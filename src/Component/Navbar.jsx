@@ -2,6 +2,9 @@ import React from "react";
 import logo from "../assets/logo.png";
 import { Link, NavLink } from "react-router";
 import { FaGithub } from "react-icons/fa6";
+import { FaHome } from "react-icons/fa";
+import { FaAppStore } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa6";
 
 const Navbar = () => {
   return (
@@ -30,13 +33,22 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/">
+                <FaHome />
+                Home
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/app">Apps</NavLink>
+              <NavLink to="/app">
+                <FaAppStore />
+                Apps
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/installedApp">Installation</NavLink>
+              <NavLink to="/installedApp">
+                <FaDownload />
+                Installation
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -50,13 +62,22 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/">
+              <FaHome />
+              Home
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/app">Apps</NavLink>
+            <NavLink to="/app">
+              <FaAppStore />
+              Apps
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/installedApp">Installation</NavLink>
+            <NavLink to="/installedApp">
+              <FaDownload />
+              Installation
+            </NavLink>
           </li>
         </ul>
       </div>
