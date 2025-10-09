@@ -86,7 +86,11 @@ const InstalledAppPage = () => {
                 className=" flex flex-col md:flex-row items-center justify-between bg-white rounded-xl p-3 mb-2 hover:shadow-2xl duration-300 cursor-pointer"
               >
                 <div className=" flex flex-col md:flex-row  items-center gap-3">
-                  <img className=" h-20 " src={item.image} alt="" />
+                  <img
+                    className=" h-20 w-20 object-cover"
+                    src={item.image}
+                    alt=""
+                  />
                   <div>
                     <h5 className=" font-semibold text-xl text-center md:text-start">
                       {item.title}
