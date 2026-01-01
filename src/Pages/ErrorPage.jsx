@@ -4,6 +4,7 @@ import Navbar from "../Component/Navbar";
 import Footer from "../Component/Footer";
 
 const ErrorPage = () => {
+  // error cullect kore ui te dekhano holo
   const error = useRouteError();
   return (
     <>

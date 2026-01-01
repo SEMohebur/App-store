@@ -31,6 +31,7 @@ const CardDetailPage = () => {
   //btn status check
   useEffect(() => {
     const downloadedApp = JSON.parse(localStorage.getItem("appList"));
+    // sum true false return korbe
     const status = downloadedApp?.some((app) => app.id == id);
     setBtnStatus(status);
   }, [btnStatus]);
